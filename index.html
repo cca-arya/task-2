@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./logic.js"></script>
+</head>
+<body>
+    <div>
+        <div id="increment">+</div>
+        <div id="count">
+            0
+        </div>
+        <div id="decrement">-</div>
+    </div>
+
+    <script>
+        const increment = document.getElementById('increment');
+        const decrement = document.getElementById('decrement');
+        const count = document.getElementById('count');
+
+        increment.addEventListener('click', () => {
+            count.innerHTML = parseInt(count.innerHTML) + 1;
+        });
+
+        decrement.addEventListener('click', () => {
+            count.innerHTML = parseInt(count.innerHTML) - 1;
+        });
+    </script>
+</body>
+</html>
